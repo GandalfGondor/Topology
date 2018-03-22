@@ -62,6 +62,9 @@ int main()
 		GL->adjList[j].in++;
 		GL->adjList[i].firstedge = e;
 	}
+	cout<<"Topo sort is ";	
+	TopologicalSort(GL);
+	cout<<endl;
 	for(i=0;i<GL->numVertexes;i++)
 	{
 		cout<<GL->adjList[i].data<<" ";
